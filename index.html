@@ -531,8 +531,8 @@ const save = () => { try{ localStorage.setItem("cm_bag",JSON.stringify(bag)); }c
 function toast(t){ const el=$("#toast"); el.textContent=t; el.classList.add("on"); clearTimeout(toast.t); toast.t=setTimeout(()=>el.classList.remove("on"),2200); }
 
 /* ============ INSTAGRAM ============ */
-const igProfile = INSTAGRAM ? `https://www.instagram.com/${INSTAGRAM}/` : "https://www.instagram.com/";
-const igDM = INSTAGRAM ? `https://ig.me/m/${INSTAGRAM}` : "https://www.instagram.com/direct/inbox/";
+const igProfile = INSTAGRAM ? `https://www.instagram.com/clouset_da_moda` : "https://www.instagram.com/clouset_da_moda";
+const igDM = INSTAGRAM ? `https://ig.me/m/clouset_da_moda` : "https://www.instagram.com/direct/inbox/clouset_da_moda";
 $$(".igLink").forEach(a=>a.href=igProfile);
 $$(".igDM").forEach(a=>a.href=igDM);
 if(INSTAGRAM) $("#handle").textContent="@"+INSTAGRAM;
